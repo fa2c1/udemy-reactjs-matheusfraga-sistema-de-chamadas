@@ -1,4 +1,3 @@
-
 import { useState, createContext, useEffect } from 'react';
 import firebase from '../services/firebaseConnection';
 
@@ -25,6 +24,7 @@ function AuthProvider({ children }){
     loadStorage();
 
   }, [])
+
 
   async function signUp(email, password, nome){
     setLoadingAuth(true);
